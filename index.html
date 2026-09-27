@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120d18">
+  <title>Для тебя</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+
+  <header class="header">
+    <a href="#home" class="logo">for <span data-config="name">Тебя</span> ♡</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Сменить тему">☼</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="small-label">a little page for</div>
+        <h1><span data-config="name">Тебя</span>,<br><i>это всё для тебя.</i></h1>
+        <p data-config="heroText">
+          Иногда человеку хочется сказать намного больше, чем получается обычным сообщением.
+          Поэтому я решил оставить эти слова здесь.
+        </p>
+
+        <a href="#message" class="scroll-button">
+          <span>читать дальше</span>
+          <span class="arrow">↓</span>
+        </a>
+      </div>
+
+      <div class="hero-symbol">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="heart">♡</div>
+        <span class="orbit-word word-1">любовь</span>
+        <span class="orbit-word word-2">нежность</span>
+        <span class="orbit-word word-3">ты</span>
+      </div>
+    </section>
+
+    <section class="message section" id="message">
+      <div class="section-number">01</div>
+      <div class="message-grid">
+        <div class="side-title">
+          <span>несколько</span>
+          <strong>слов</strong>
+        </div>
+
+        <article class="paper">
+          <div class="paper-top">
+            <span>♡</span>
+            <span data-config="date">для тебя</span>
+          </div>
+
+          <p data-config="message1">
+            Я не знаю, каким будет этот день, когда ты откроешь эту страницу.
+            Но я точно знаю одно — ты заслуживаешь услышать хорошие слова.
+          </p>
+
+          <p data-config="message2">
+            Мне нравится в тебе то, что невозможно описать одним предложением.
+            Твоя улыбка, твой характер, твои реакции, твои маленькие привычки —
+            всё это делает тебя именно тобой.
+          </p>
+
+          <p data-config="message3">
+            И если сегодня тебе вдруг станет грустно, просто вспомни:
+            где-то есть человек, который считает тебя невероятной.
+          </p>
+
+          <div class="signature">
+            <span data-config="signature">С любовью</span>
+            <strong data-config="from">от меня ♡</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reasons section">
+      <div class="section-number">02</div>
+      <div class="section-head">
+        <span>и всё-таки</span>
+        <h2>Почему именно ты?</h2>
+      </div>
+
+      <div class="reason-list">
+        <button class="reason active">
+          <span class="reason-num">01</span>
+          <span class="reason-title" data-config="reason1Title">Потому что с тобой спокойно</span>
+          <span class="reason-plus">+</span>
+          <span class="reason-text" data-config="reason1Text">Есть люди, рядом с которыми не нужно ничего изображать. Просто быть собой — и этого достаточно.</span>
+        </button>
+
+        <button class="reason">
+          <span class="reason-num">02</span>
+          <span class="reason-title" data-config="reason2Title">Потому что ты особенная</span>
+          <span class="reason-plus">+</span>
+          <span class="reason-text" data-config="reason2Text">Не потому что идеальная, а потому что настоящая. Именно это и хочется ценить.</span>
+        </button>
+
+        <button class="reason">
+          <span class="reason-num">03</span>
+          <span class="reason-title" data-config="reason3Title">Потому что ты умеешь улыбать</span>
+          <span class="reason-plus">+</span>
+          <span class="reason-text" data-config="reason3Text">Иногда одного твоего сообщения достаточно, чтобы обычный день стал намного приятнее.</span>
+        </button>
+
+        <button class="reason">
+          <span class="reason-num">04</span>
+          <span class="reason-title" data-config="reason4Title">Потому что ты — это ты</span>
+          <span class="reason-plus">+</span>
+          <span class="reason-text" data-config="reason4Text">И, наверное, этого объяснения на самом деле вполне достаточно.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="secret section" id="secret">
+      <div class="secret-card">
+        <div class="secret-glow"></div>
+        <span class="secret-label">03 / маленький секрет</span>
+        <div class="lock" id="lock">♡</div>
+        <h2 data-config="secretTitle">Здесь спрятано кое-что ещё.</h2>
+        <p data-config="secretText">Нажми на сердечко, если хочешь открыть.</p>
+        <button id="openSecret" class="secret-button">Открыть ♡</button>
+
+        <div class="secret-content" id="secretContent" hidden>
+          <span class="secret-big-heart">♥</span>
+          <h3 data-config="secretResultTitle">Ты — моё любимое уведомление.</h3>
+          <p data-config="secretResultText">
+            И если бы можно было сохранить один момент навсегда,
+            я бы выбрал тот, где ты улыбаешься.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ending section">
+      <div class="ending-line"></div>
+      <span>для <span data-config="name">тебя</span></span>
+      <h2 data-config="endingTitle">Будь счастлива.<br>Это главное.</h2>
+      <button id="loveBtn" class="love-button">
+        <span>♥</span>
+        <span data-config="loveButton">Я тебя люблю</span>
+      </button>
+      <div id="loveResult" class="love-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    made with ♡ for <span data-config="name">тебя</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
